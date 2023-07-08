@@ -1,0 +1,174 @@
+D:/term4/mipspipeline/regFile.v {1 {vlog -work work -vopt -stats=none {D:\term4\mipspipeline\regFile.v}
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module regFile
+
+Top level modules:
+	regFile
+
+} {} {}} D:/term4/mipspipeline/IF2ID.v {1 {vlog -work work -vopt -stats=none {D:\term4\mipspipeline\IF2ID.v}
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module IF2ID
+
+Top level modules:
+	IF2ID
+
+} {} {}} D:/term4/mipspipeline/defines.v {1 {vlog -work work -vopt -stats=none {D:\term4\mipspipeline\defines.v}
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+
+} {} {}} D:/term4/mipspipeline/adder.v {1 {vlog -work work -vopt -stats=none {D:\term4\mipspipeline\adder.v}
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module adder
+
+Top level modules:
+	adder
+
+} {} {}} D:/term4/mipspipeline/instructionMEM.v {1 {vlog -work work -vopt -stats=none {D:\term4\mipspipeline\instructionMEM.v}
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module instructionMem
+
+Top level modules:
+	instructionMem
+
+} {} {}} D:/term4/mipspipeline/ID2EXE.v {1 {vlog -work work -vopt -stats=none {D:\term4\mipspipeline\ID2EXE.v}
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module ID2EXE
+
+Top level modules:
+	ID2EXE
+
+} {} {}} D:/term4/mipspipeline/IDstage.v {1 {vlog -work work -vopt -stats=none {D:\term4\mipspipeline\IDstage.v}
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module IDStage
+
+Top level modules:
+	IDStage
+
+} {} {}} D:/term4/mipspipeline/forwarding.v {1 {vlog -work work -vopt -stats=none {D:\term4\mipspipeline\forwarding.v}
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module forwarding_EXE
+
+Top level modules:
+	forwarding_EXE
+
+} {} {}} D:/term4/mipspipeline/EXE2MEM.v {1 {vlog -work work -vopt -stats=none {D:\term4\mipspipeline\EXE2MEM.v}
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module EXE2MEM
+
+Top level modules:
+	EXE2MEM
+
+} {} {}} D:/term4/mipspipeline/IFstage.v {1 {vlog -work work -vopt -stats=none {D:\term4\mipspipeline\IFstage.v}
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module IFStage
+
+Top level modules:
+	IFStage
+
+} {} {}} D:/term4/mipspipeline/MEMStage.v {1 {vlog -work work -vopt -stats=none {D:\term4\mipspipeline\MEMStage.v}
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module MEMStage
+
+Top level modules:
+	MEMStage
+
+} {} {}} D:/term4/mipspipeline/register.v {1 {vlog -work work -vopt -stats=none {D:\term4\mipspipeline\register.v}
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module register
+
+Top level modules:
+	register
+
+} {} {}} D:/term4/mipspipeline/topLevelCircuit.v {1 {vlog -work work -vopt -stats=none {D:\term4\mipspipeline\topLevelCircuit.v}
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module MIPS_Processor
+
+Top level modules:
+	MIPS_Processor
+
+} {} {}} D:/term4/mipspipeline/EXEstage.v {1 {vlog -work work -vopt -stats=none {D:\term4\mipspipeline\EXEstage.v}
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module EXEStage
+
+Top level modules:
+	EXEStage
+
+} {} {}} D:/term4/mipspipeline/hazardDetection.v {1 {vlog -work work -vopt -stats=none {D:\term4\mipspipeline\hazardDetection.v}
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module hazard_detection
+
+Top level modules:
+	hazard_detection
+
+} {} {}} D:/term4/mipspipeline/dataMEM.v {1 {vlog -work work -vopt -stats=none {D:\term4\mipspipeline\dataMEM.v}
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module dataMem
+
+Top level modules:
+	dataMem
+
+} {} {}} D:/term4/mipspipeline/signExtend.v {1 {vlog -work work -vopt -stats=none {D:\term4\mipspipeline\signExtend.v}
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module signExtend
+
+Top level modules:
+	signExtend
+
+} {} {}} D:/term4/mipspipeline/MEM2WB.v {1 {vlog -work work -vopt -stats=none {D:\term4\mipspipeline\MEM2WB.v}
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module MEM2WB
+
+Top level modules:
+	MEM2WB
+
+} {} {}} D:/term4/mipspipeline/mux.v {1 {vlog -work work -vopt -stats=none {D:\term4\mipspipeline\mux.v}
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module mux
+-- Compiling module mux_3input
+
+Top level modules:
+	mux
+	mux_3input
+
+} {} {}} D:/term4/mipspipeline/ALU.v {1 {vlog -work work -vopt -stats=none {D:\term4\mipspipeline\ALU.v}
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module ALU
+
+Top level modules:
+	ALU
+
+} {} {}} D:/term4/mipspipeline/7segConv.v {1 {vlog -work work -vopt -stats=none {D:\term4\mipspipeline\7segConv.v}
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module sevenSegConv
+
+Top level modules:
+	sevenSegConv
+
+} {} {}} D:/term4/mipspipeline/controller.v {1 {vlog -work work -vopt -stats=none {D:\term4\mipspipeline\controller.v}
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module controller
+
+Top level modules:
+	controller
+
+} {} {}} D:/term4/mipspipeline/conditionChecker.v {1 {vlog -work work -vopt -stats=none {D:\term4\mipspipeline\conditionChecker.v}
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module conditionChecker
+
+Top level modules:
+	conditionChecker
+
+} {} {}} D:/term4/mipspipeline/DE2_TOP.v {1 {vlog -work work -vopt -stats=none {D:\term4\mipspipeline\DE2_TOP.v}
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module DE2_TOP
+
+Top level modules:
+	DE2_TOP
+
+} {} {}} D:/term4/mipspipeline/WBStage.v {1 {vlog -work work -vopt -stats=none {D:\term4\mipspipeline\WBStage.v}
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module WBStage
+
+Top level modules:
+	WBStage
+
+} {} {}}
