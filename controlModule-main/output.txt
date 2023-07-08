@@ -1,0 +1,10 @@
+red light=0 blue light=0 green light=0 Lock=0
+red light=0 blue light=1 green light=0 Lock=0
+red light=1 blue light=1 green light=1 Lock=1
+red light=0 blue light=1 green light=0 Lock=1
+red light=0 blue light=1 green light=0 Lock=0
+red light=0 blue light=0 green light=1 Lock=1
+red light=0 blue light=1 green light=0 Lock=0
+red light=1 blue light=0 green light=0 Lock=0
+red light=0 blue light=1 green light=0 Lock=0
+red light=1 blue light=1 green light=1 Lock=1
