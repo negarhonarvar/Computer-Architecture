@@ -1,0 +1,74 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dF:/SBU/Memari/PHW/HW01
+vmoduleName
+!s110 1649097653
+!i10b 1
+!s100 2HITUGcN84X_mG1DM>zY_2
+Ie0kfJIUgBR6g26XO5]=AL2
+Z0 VDg1SIo80bB@j0V0VzS_@n1
+Z1 dF:/SBU/Az (memari)/HW03/myproject
+w1649097651
+Z2 8F:/SBU/Az (memari)/HW03/myproject/multiplier_tb.v
+Z3 FF:/SBU/Az (memari)/HW03/myproject/multiplier_tb.v
+L0 2
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1649097653.000000
+Z5 !s107 shift_Multiplier.v|F:/SBU/Az (memari)/HW03/myproject/multiplier_tb.v|
+Z6 !s90 -reportprogress|300|-work|work|-stats=none|F:/SBU/Az (memari)/HW03/myproject/multiplier_tb.v|
+!i113 1
+Z7 o-work work
+Z8 tCvgOpt 0
+nmodule@name
+vmulti_tb
+Z9 !s110 1649098365
+!i10b 1
+!s100 APZKJmVolEQ^ezA3Hbid[1
+I9PH]G;FMRe2<nICS@Z=6A1
+R0
+R1
+w1649098364
+R2
+R3
+L0 3
+R4
+r1
+!s85 0
+31
+Z10 !s108 1649098365.000000
+R5
+R6
+!i113 1
+R7
+R8
+vmultiplier
+R9
+!i10b 1
+!s100 ]Fm1lV<kWTa]1lUS`DB7l0
+IgPlIQQeQdP^D86Q3<Tn?;0
+R0
+R1
+w1649098089
+8F:/SBU/Az (memari)/HW03/myproject/shift_Multiplier.v
+FF:/SBU/Az (memari)/HW03/myproject/shift_Multiplier.v
+L0 2
+R4
+r1
+!s85 0
+31
+R10
+!s107 F:/SBU/Az (memari)/HW03/myproject/shift_Multiplier.v|
+!s90 -reportprogress|300|-work|work|-stats=none|F:/SBU/Az (memari)/HW03/myproject/shift_Multiplier.v|
+!i113 1
+R7
+R8

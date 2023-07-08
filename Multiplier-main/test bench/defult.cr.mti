@@ -1,0 +1,16 @@
+{F:/SBU/Az (memari)/HW03/myproject/multiplier_tb.v} {1 {vlog -work work -stats=none {F:/SBU/Az (memari)/HW03/myproject/multiplier_tb.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module multiplier
+-- Compiling module multi_tb
+
+Top level modules:
+	multi_tb
+
+} {} {}} {F:/SBU/Az (memari)/HW03/myproject/shift_Multiplier.v} {1 {vlog -work work -stats=none {F:/SBU/Az (memari)/HW03/myproject/shift_Multiplier.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module multiplier
+
+Top level modules:
+	multiplier
+
+} {} {}}
