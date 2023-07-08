@@ -1,0 +1,12 @@
+xst -intstyle ise -ifn "F:/AZ/HW03/multiplier.xst" -ofn "F:/AZ/HW03/multiplier.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim multiplier.ngc multiplier_synthesis.v 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-vq100-5 multiplier.ngc multiplier.ngd  
+map -intstyle ise -p xc3s100e-vq100-5 -cm area -ir off -pr off -c 100 -o multiplier_map.ncd multiplier.ngd multiplier.pcf 
+par -w -intstyle ise -ol high -t 1 multiplier_map.ncd multiplier.ncd multiplier.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml multiplier.twx multiplier.ncd -o multiplier.twr multiplier.pcf 
+xst -intstyle ise -ifn "F:/AZ/HW03/multiplier.xst" -ofn "F:/AZ/HW03/multiplier.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim multiplier.ngc multiplier_synthesis.v 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-vq100-5 multiplier.ngc multiplier.ngd  
+map -intstyle ise -p xc3s100e-vq100-5 -cm area -ir off -pr off -c 100 -o multiplier_map.ncd multiplier.ngd multiplier.pcf 
+par -w -intstyle ise -ol high -t 1 multiplier_map.ncd multiplier.ncd multiplier.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml multiplier.twx multiplier.ncd -o multiplier.twr multiplier.pcf 

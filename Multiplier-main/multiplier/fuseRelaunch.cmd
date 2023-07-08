@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "F:/AZ/HW03/multi_tb_isim_beh.exe" -prj "F:/AZ/HW03/multi_tb_beh.prj" "work.multi_tb" "work.glbl" 

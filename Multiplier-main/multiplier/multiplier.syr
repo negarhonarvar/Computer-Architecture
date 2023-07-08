@@ -1,0 +1,373 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: multiplier.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "multiplier.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "multiplier"
+Output Format                      : NGC
+Target Device                      : xc3s100e-5-vq100
+
+---- Source Options
+Top Module Name                    : multiplier
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "shift_Multiplier.v" in library work
+Module <multiplier> compiled
+No errors in compilation
+Analysis of file <"multiplier.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <multiplier> in library <work> with parameters.
+	size = "00000000000000000000000000000110"
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <multiplier>.
+	size = 32'sb00000000000000000000000000000110
+Module <multiplier> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+INFO:Xst:2679 - Register <m<5>> in unit <multiplier> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <m<4>> in unit <multiplier> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <m<3>> in unit <multiplier> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <m<2>> in unit <multiplier> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <m<1>> in unit <multiplier> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <m<0>> in unit <multiplier> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <p> in unit <multiplier> has a constant value of 000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <i> in unit <multiplier> has a constant value of 110 during circuit operation. The register is replaced by logic.
+
+Synthesizing Unit <multiplier>.
+    Related source file is "shift_Multiplier.v".
+WARNING:Xst:646 - Signal <p> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <m> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 12-bit register for signal <product>.
+    Found 12-bit adder for signal <old_product_10$addsub0000> created at line 40.
+    Found 12-bit adder for signal <old_product_4$addsub0000> created at line 40.
+    Found 12-bit adder for signal <old_product_6$addsub0000> created at line 40.
+    Found 12-bit adder for signal <old_product_8$addsub0000> created at line 40.
+    Found 12-bit adder for signal <product$addsub0000> created at line 40.
+    Summary:
+	inferred  12 D-type flip-flop(s).
+	inferred   5 Adder/Subtractor(s).
+Unit <multiplier> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 5
+ 12-bit adder                                          : 5
+# Registers                                            : 1
+ 12-bit register                                       : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 5
+ 12-bit adder                                          : 5
+# Registers                                            : 12
+ Flip-Flops                                            : 12
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <multiplier> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block multiplier, actual ratio is 4.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 12
+ Flip-Flops                                            : 12
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : multiplier.ngr
+Top Level Output File Name         : multiplier
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 26
+
+Cell Usage :
+# BELS                             : 141
+#      GND                         : 1
+#      INV                         : 1
+#      LUT1                        : 1
+#      LUT2                        : 10
+#      LUT3                        : 15
+#      LUT4                        : 41
+#      MUXCY                       : 30
+#      MUXF5                       : 8
+#      XORCY                       : 34
+# FlipFlops/Latches                : 12
+#      FDR                         : 12
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 25
+#      IBUF                        : 13
+#      OBUF                        : 12
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s100evq100-5 
+
+ Number of Slices:                       40  out of    960     4%  
+ Number of 4 input LUTs:                 68  out of   1920     3%  
+ Number of IOs:                          26
+ Number of bonded IOBs:                  26  out of     66    39%  
+    IOB Flip Flops:                      12
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 12    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: 14.417ns
+   Maximum output required time after clock: 4.040ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 86990 / 24
+-------------------------------------------------------------------------
+Offset:              14.417ns (Levels of Logic = 20)
+  Source:            multiplier<0> (PAD)
+  Destination:       product_8 (FF)
+  Destination Clock: clk rising
+
+  Data Path: multiplier<0> to product_8
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            15   1.106   1.016  multiplier_0_IBUF (multiplier_0_IBUF)
+     LUT3:I0->O            1   0.612   0.000  Madd_old_product_4_addsub0000_lut<1> (Madd_old_product_4_addsub0000_lut<1>)
+     MUXCY:S->O            1   0.404   0.000  Madd_old_product_4_addsub0000_cy<1> (Madd_old_product_4_addsub0000_cy<1>)
+     XORCY:CI->O           2   0.699   0.449  Madd_old_product_4_addsub0000_xor<2> (old_product_4_addsub0000<2>)
+     LUT4:I1->O            1   0.612   0.000  Madd_old_product_6_addsub0000_lut<2> (Madd_old_product_6_addsub0000_lut<2>)
+     MUXCY:S->O            1   0.404   0.000  Madd_old_product_6_addsub0000_cy<2> (Madd_old_product_6_addsub0000_cy<2>)
+     XORCY:CI->O           3   0.699   0.520  Madd_old_product_6_addsub0000_xor<3> (old_product_6_addsub0000<3>)
+     LUT4:I1->O            1   0.612   0.000  Madd_old_product_8_addsub0000_lut<3> (Madd_old_product_8_addsub0000_lut<3>)
+     MUXCY:S->O            1   0.404   0.000  Madd_old_product_8_addsub0000_cy<3> (Madd_old_product_8_addsub0000_cy<3>)
+     XORCY:CI->O           3   0.699   0.520  Madd_old_product_8_addsub0000_xor<4> (old_product_8_addsub0000<4>)
+     LUT4:I1->O            1   0.612   0.000  Madd_old_product_10_addsub0000_lut<4> (Madd_old_product_10_addsub0000_lut<4>)
+     MUXCY:S->O            1   0.404   0.000  Madd_old_product_10_addsub0000_cy<4> (Madd_old_product_10_addsub0000_cy<4>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_old_product_10_addsub0000_cy<5> (Madd_old_product_10_addsub0000_cy<5>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_old_product_10_addsub0000_cy<6> (Madd_old_product_10_addsub0000_cy<6>)
+     XORCY:CI->O           3   0.699   0.520  Madd_old_product_10_addsub0000_xor<7> (old_product_10_addsub0000<7>)
+     LUT4:I1->O            1   0.612   0.000  Madd_product_addsub0000_lut<7> (Madd_product_addsub0000_lut<7>)
+     MUXCY:S->O            1   0.404   0.000  Madd_product_addsub0000_cy<7> (Madd_product_addsub0000_cy<7>)
+     XORCY:CI->O           2   0.699   0.449  Madd_product_addsub0000_xor<8> (product_addsub0000<8>)
+     LUT4:I1->O            1   0.612   0.000  product_mux0000<8>12 (product_mux0000<8>11)
+     MUXF5:I0->O           1   0.278   0.000  product_mux0000<8>1_f5 (product_mux0000<8>)
+     FDR:D                     0.268          product_8
+    ----------------------------------------
+    Total                     14.417ns (10.942ns logic, 3.475ns route)
+                                       (75.9% logic, 24.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 12 / 12
+-------------------------------------------------------------------------
+Offset:              4.040ns (Levels of Logic = 1)
+  Source:            product_11 (FF)
+  Destination:       product<11> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: product_11 to product<11>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              1   0.514   0.357  product_11 (product_11)
+     OBUF:I->O                 3.169          product_11_OBUF (product<11>)
+    ----------------------------------------
+    Total                      4.040ns (3.683ns logic, 0.357ns route)
+                                       (91.2% logic, 8.8% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 3.59 secs
+ 
+--> 
+
+Total memory usage is 4514992 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    2 (   0 filtered)
+Number of infos    :    8 (   0 filtered)
+

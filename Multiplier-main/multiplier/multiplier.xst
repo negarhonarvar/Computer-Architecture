@@ -1,0 +1,5 @@
+set -tmpdir "F:/AZ/HW03/xst/projnav.tmp"
+set -xsthdpdir "F:/AZ/HW03/xst"
+elaborate
+-ifn multiplier.prj
+-ifmt mixed
