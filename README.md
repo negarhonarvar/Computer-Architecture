@@ -1,2 +1,3 @@
 # Computer-architecture
-a full collection of projects done for computer architecture course and computer architecture and logical circuit laboratory 
+A Series of Usefull Projects in Computer Architecture. 
+Details on each projects is provided through their related repository readme.md file.
